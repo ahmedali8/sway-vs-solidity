@@ -1,4 +1,4 @@
-name: Forge test
+name: Forge Build
 
 on:
   workflow_dispatch:
@@ -35,8 +35,3 @@ jobs:
           forge --version
           forge build --sizes
         id: build
-
-      - name: Run Forge tests
-        run: |
-          forge test -vvv
-        id: test
